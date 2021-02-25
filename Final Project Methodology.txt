@@ -1,0 +1,19 @@
+Business Problem:
+
+    A real estate firm has contacted me to assist with a business case. They have clients who are looking to move out of Dallas Texas and would be interested in moving to a city that is similar to Dallas when it comes to restaurants, entertainment, and other attractions. I have been provided a database with with zip codes from cities all around the U.S., I was given 4 top cities to look into and was asked to find the counties within these cities that would best fit their clients needs.
+    
+    
+Data: I was given a database which is available online that includes zip codes for all counties throughout the United States. The database alos inlcudes other useful information such as the cities the zip codes are in, as well as the latitude and longitude coordinates.
+
+
+Methodology:
+
+The first step I performed was looking at what cities were included in the database and how many zip codes there were for each city. I then filtered the dataframe for only the cities I was interested in for this specific tasks. I then used all counties within these cities as the basis for this analysis. 
+
+The next step was to use the latitude and longitude cooridnates for each zip code and retreive the foursquare data for all venues located within these counties. I found the top 10 venues within each county and listed them in a new dataframe.
+
+I chose to use KNN to cluster the counties to find which ones were most alike and then took a look into the venues to see which ones were most like Dallas Texas and would best fit my clients needs. 
+
+Results:
+
+KNN resulted included Dallas County and Fulton County in the same cluster. They have similiar Venues and are both Large cities. Fulton county in Atlanta has many zip codes that are similiar to Dallas. This analysis has also helped my clients learn about which cities of interest may not be the best fit. There are a number of counties in Atlanta that are not a good fit as well as counties in Kansas City. 
